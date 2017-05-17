@@ -37,3 +37,4 @@ class Razza{
         $this->id_specie=$v;
     }
 }
+?>
