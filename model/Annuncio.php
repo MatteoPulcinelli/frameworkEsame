@@ -3,6 +3,7 @@ class Annuncio{
 	private $id;
 	private $titolo;
     private $descrizione;
+	private $data;
     private $visualizzazioni;
     private $id_utente;
     private $id_provincia;
@@ -23,6 +24,10 @@ class Annuncio{
     function getVisualizzazioni(){
         return $this->visualizzazioni
     }
+	
+	function getData(){
+		return $this->data;	
+	}
     
     function getIDUtente(){
         return $this->id_utente;    
@@ -46,6 +51,10 @@ class Annuncio{
 	
 	function setDescrizione($v){
 		$this->descrizione=$v;
+	}
+	
+	function setData($v){
+		$this->data=$v;	
 	}
 	
 	function setVisualizzazioni($v){
